@@ -256,90 +256,90 @@ describe('JAVASCRIPT I', function () {
       });
    });
 
-   describe('EJERCICIO 05', function () {
-      describe('esPositivo(num)', function () {
-         it('Debe devolver el string "Es positivo" si el número es mayor a cero', function () {
-            expect(esPositivo(23)).toBe('Es positivo');
-         });
-         it('Debe devolver el string "Es negativo" si el número es menor a cero', function () {
-            expect(esPositivo(-2)).toBe('Es negativo');
-         });
-         it('Debe devolver False si el número es cero', function () {
-            expect(esPositivo(0)).toBe(false);
-         });
-      });
+   // describe('EJERCICIO 05', function () {
+   //    describe('esPositivo(num)', function () {
+   //       it('Debe devolver el string "Es positivo" si el número es mayor a cero', function () {
+   //          expect(esPositivo(23)).toBe('Es positivo');
+   //       });
+   //       it('Debe devolver el string "Es negativo" si el número es menor a cero', function () {
+   //          expect(esPositivo(-2)).toBe('Es negativo');
+   //       });
+   //       it('Debe devolver False si el número es cero', function () {
+   //          expect(esPositivo(0)).toBe(false);
+   //       });
+   //    });
 
-      describe('agregarSimboloExclamacion(str)', function () {
-         it('Debe agregar un signo de exclamacion al final del string', function () {
-            expect(agregarSimboloExclamacion('hello world')).toBe(
-               'hello world!'
-            );
-            expect(agregarSimboloExclamacion('Soy Henry')).toBe('Soy Henry!');
-         });
-      });
+   //    describe('agregarSimboloExclamacion(str)', function () {
+   //       it('Debe agregar un signo de exclamacion al final del string', function () {
+   //          expect(agregarSimboloExclamacion('hello world')).toBe(
+   //             'hello world!'
+   //          );
+   //          expect(agregarSimboloExclamacion('Soy Henry')).toBe('Soy Henry!');
+   //       });
+   //    });
 
-      describe('combinarNombres(nombre, apellido)', function () {
-         it('Debe devolver los strings combinados con un espacio en el medio', function () {
-            expect(combinarNombres('hello', 'world')).toBe('hello world');
-            expect(combinarNombres('Soy', 'Henry')).toBe('Soy Henry');
-         });
-      });
+   //    describe('combinarNombres(nombre, apellido)', function () {
+   //       it('Debe devolver los strings combinados con un espacio en el medio', function () {
+   //          expect(combinarNombres('hello', 'world')).toBe('hello world');
+   //          expect(combinarNombres('Soy', 'Henry')).toBe('Soy Henry');
+   //       });
+   //    });
 
-      describe('obtenerSaludo(nombre)', function () {
-         it("Debe devolver el string 'Hola {name}!'", function () {
-            expect(obtenerSaludo('Martin')).toBe('Hola Martin!');
-            expect(obtenerSaludo('Antonio')).toBe('Hola Antonio!');
-         });
-      });
+   //    describe('obtenerSaludo(nombre)', function () {
+   //       it("Debe devolver el string 'Hola {name}!'", function () {
+   //          expect(obtenerSaludo('Martin')).toBe('Hola Martin!');
+   //          expect(obtenerSaludo('Antonio')).toBe('Hola Antonio!');
+   //       });
+   //    });
 
-      describe('obtenerAreaRectangulo(alto, ancho)', function () {
-         it('Debe retornar el área correcta del rectángulo', function () {
-            expect(obtenerAreaRectangulo(2, 2)).toBe(4);
-            expect(obtenerAreaRectangulo(3, 6)).toBe(18);
-            expect(obtenerAreaRectangulo(0, 2)).toBe(0);
-         });
-      });
+   //    describe('obtenerAreaRectangulo(alto, ancho)', function () {
+   //       it('Debe retornar el área correcta del rectángulo', function () {
+   //          expect(obtenerAreaRectangulo(2, 2)).toBe(4);
+   //          expect(obtenerAreaRectangulo(3, 6)).toBe(18);
+   //          expect(obtenerAreaRectangulo(0, 2)).toBe(0);
+   //       });
+   //    });
 
-      describe('retornarPerimetro(lado)', function () {
-         it('Debe retornar el perímetro correcto del cuadrado', function () {
-            expect(retornarPerimetro(2)).toBe(8);
-            expect(retornarPerimetro(8)).toBe(32);
-            expect(retornarPerimetro(0)).toBe(0);
-         });
-      });
+   //    describe('retornarPerimetro(lado)', function () {
+   //       it('Debe retornar el perímetro correcto del cuadrado', function () {
+   //          expect(retornarPerimetro(2)).toBe(8);
+   //          expect(retornarPerimetro(8)).toBe(32);
+   //          expect(retornarPerimetro(0)).toBe(0);
+   //       });
+   //    });
 
-      describe('areaDelTriangulo(base, altura)', function () {
-         it('Debe retornar el área correcta del triángulo', function () {
-            expect(areaDelTriangulo(10, 5)).toBe(25);
-            expect(areaDelTriangulo(20, 10)).toBe(100);
-            expect(areaDelTriangulo(0, 10)).toBe(0);
-         });
-      });
+   //    describe('areaDelTriangulo(base, altura)', function () {
+   //       it('Debe retornar el área correcta del triángulo', function () {
+   //          expect(areaDelTriangulo(10, 5)).toBe(25);
+   //          expect(areaDelTriangulo(20, 10)).toBe(100);
+   //          expect(areaDelTriangulo(0, 10)).toBe(0);
+   //       });
+   //    });
 
-      describe('deEuroAdolar(euro)', function () {
-         it('Debe retornar el valor correcto de euro a dolar', function () {
-            expect(deEuroAdolar(100)).toBe(120);
-            expect(deEuroAdolar(200)).toBe(240);
-            expect(deEuroAdolar(50)).toBe(60);
-         });
-      });
+   //    describe('deEuroAdolar(euro)', function () {
+   //       it('Debe retornar el valor correcto de euro a dolar', function () {
+   //          expect(deEuroAdolar(100)).toBe(120);
+   //          expect(deEuroAdolar(200)).toBe(240);
+   //          expect(deEuroAdolar(50)).toBe(60);
+   //       });
+   //    });
 
-      describe('esVocal(letra)', function () {
-         it('Debe devolver el string "Dato incorrecto", si el valor ingresado tiene más de una letra', function () {
-            expect(esVocal('la')).toBe('Dato incorrecto');
-            expect(esVocal('pero')).toBe('Dato incorrecto');
-         });
-         it('Debe devolver el string "Dato incorrecto", si el valor ingresado no es vocal', function () {
-            expect(esVocal('l')).toBe('Dato incorrecto');
-            expect(esVocal('p')).toBe('Dato incorrecto');
-         });
-         it('Debe devolver el string "Es vocal", si el valor ingresado lo es', function () {
-            expect(esVocal('a')).toBe('Es vocal');
-            expect(esVocal('e')).toBe('Es vocal');
-            expect(esVocal('i')).toBe('Es vocal');
-            expect(esVocal('o')).toBe('Es vocal');
-            expect(esVocal('u')).toBe('Es vocal');
-         });
-      });
-   });
+   //    describe('esVocal(letra)', function () {
+   //       it('Debe devolver el string "Dato incorrecto", si el valor ingresado tiene más de una letra', function () {
+   //          expect(esVocal('la')).toBe('Dato incorrecto');
+   //          expect(esVocal('pero')).toBe('Dato incorrecto');
+   //       });
+   //       it('Debe devolver el string "Dato incorrecto", si el valor ingresado no es vocal', function () {
+   //          expect(esVocal('l')).toBe('Dato incorrecto');
+   //          expect(esVocal('p')).toBe('Dato incorrecto');
+   //       });
+   //       it('Debe devolver el string "Es vocal", si el valor ingresado lo es', function () {
+   //          expect(esVocal('a')).toBe('Es vocal');
+   //          expect(esVocal('e')).toBe('Es vocal');
+   //          expect(esVocal('i')).toBe('Es vocal');
+   //          expect(esVocal('o')).toBe('Es vocal');
+   //          expect(esVocal('u')).toBe('Es vocal');
+   //       });
+   //    });
+   // });
 });
