@@ -38,6 +38,7 @@ function numeroRandom() {
    // Tu código:
 }
 
+
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {
    elevarAlCuadrado,
