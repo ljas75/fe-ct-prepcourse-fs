@@ -183,6 +183,7 @@ function diaDeLaSemana(numeroDeDia) {
 console.log(diaDeLaSemana(1))
 console.log(diaDeLaSemana(7))
 console.log(diaDeLaSemana(2))
+console.log(diaDeLaSemana(3))
 
 function empiezaConNueve(num) {
    // Esta función recibe por parámetro un número.
